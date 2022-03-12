@@ -190,7 +190,7 @@ def arts(message):
         game.Ayaks.rang = "Крошка Аякс"
         game.Ayaks.level["Уровень"] = 1
         game.Ayaks.level["Опыт"] = 0
-        game.Ayaks.level["Опыт для следующего уровня"] = 10
+        game.Ayaks.level["Опыт до следующего уровня"] = 10
         game.Ayaks.level["Очки для повышения атрибутов"] = 0
         game.Ayaks.characteristic["Нынешнее здоровье"] = 120
         game.Ayaks.characteristic["Максимальное здоровье"] = 120
@@ -401,7 +401,7 @@ def arts(message):
                         game.Ayaks.characteristic["Урон"]*=2
                         c = 1
                 game.Li.characteristic["Здоровье"]-=game.Ayaks.characteristic["Урон"]
-                Tartaglia.send_message(message.chat.id, f'\nБлагодаря своей ловкости Аякс наносит дополнительный удар.')
+                Tartaglia.send_message(message.chat.id, '\nБлагодаря своей ловкости Аякс наносит дополнительный удар.')
                 if c == 1:
                     Tartaglia.send_message(message.chat.id, f'\nАякс ударил Моракса и нанёс ему критический урон! {game.Ayaks.characteristic["Урон"]} урона.\nУ Моракса осталось {game.Li.characteristic["Здоровье"]} здоровья.')
                     c = 0
@@ -415,7 +415,7 @@ def arts(message):
                         game.Ayaks.characteristic["Урон"]*=2
                         c = 1
                 game.Li.characteristic["Здоровье"]-=game.Ayaks.characteristic["Урон"]
-                Tartaglia.send_message(message.chat.id, f'\nБлагодаря своей ловкости Аякс наносит дополнительный удар.')
+                Tartaglia.send_message(message.chat.id, '\nБлагодаря своей ловкости Аякс наносит дополнительный удар.')
                 if c == 1:
                     Tartaglia.send_message(message.chat.id, f'\nАякс ударил Моракса и нанёс ему критический урон! {game.Ayaks.characteristic["Урон"]} урона.\nУ Моракса осталось {game.Li.characteristic["Здоровье"]} здоровья.')
                     c = 0
@@ -424,7 +424,7 @@ def arts(message):
                     Tartaglia.send_message(message.chat.id, f'\nАякс ударил Мораска и нанёс ему {game.Ayaks.characteristic["Урон"]} урона.\nУ Моракса осталось {game.Li.characteristic["Здоровье"]} здоровья.')
 
         elif em == 1:
-            Tartaglia.send_message(message.chat.id, f'\nБлагодаря ловкости, Моракс смог увернуться от удара Аякса.')
+            Tartaglia.send_message(message.chat.id, '\nБлагодаря ловкости, Моракс смог увернуться от удара Аякса.')
             em = 0    
 
         if game.Li.characteristic["Здоровье"]>0:            
@@ -444,7 +444,7 @@ def arts(message):
                     elif cm == 0:
                         Tartaglia.send_message(message.chat.id, f'\nМоракс ударил Аякса и нанёс ему {game.Li.characteristic["Урон"]} урона.\nУ Аякса осталось {game.Ayaks.characteristic["Нынешнее здоровье"]} здоровья.')
             elif e == 1:
-                Tartaglia.send_message(message.chat.id, f'\nБлагодаря ловкости, Аякс смог увернуться от удара Моракса.')
+                Tartaglia.send_message(message.chat.id, '\nБлагодаря ловкости, Аякс смог увернуться от удара Моракса.')
                 e = 0           
 
         elif game.Li.characteristic["Здоровье"]<=0:
@@ -456,7 +456,7 @@ def arts(message):
             game.Ayaks.rang = "Крошка Аякс"
             game.Ayaks.level["Уровень"] = 1
             game.Ayaks.level["Опыт"] = 0
-            game.Ayaks.level["Опыт для следующего уровня"] = 10
+            game.Ayaks.level["Опыт до следующего уровня"] = 10
             game.Ayaks.level["Очки для повышения атрибутов"] = 0
             game.Ayaks.characteristic["Нынешнее здоровье"] = 120
             game.Ayaks.characteristic["Максимальное здоровье"] = 120
@@ -476,7 +476,7 @@ def arts(message):
             game.Ayaks.rang = "Крошка Аякс"
             game.Ayaks.level["Уровень"] = 1
             game.Ayaks.level["Опыт"] = 0
-            game.Ayaks.level["Опыт для следующего уровня"] = 10
+            game.Ayaks.level["Опыт до следующего уровня"] = 10
             game.Ayaks.level["Очки для повышения атрибутов"] = 0
             game.Ayaks.characteristic["Нынешнее здоровье"] = 120
             game.Ayaks.characteristic["Максимальное здоровье"] = 120
