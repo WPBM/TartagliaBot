@@ -190,7 +190,7 @@ def arts(message):
         game.Ayaks.rang = "Крошка Аякс"
         game.Ayaks.level["Уровень"] = 1
         game.Ayaks.level["Опыт"] = 0
-        game.Ayaks.level["Опыт дл следующего уровня"] = 10
+        game.Ayaks.level["Опыт для следующего уровня"] = 10
         game.Ayaks.level["Очки для повышения атрибутов"] = 0
         game.Ayaks.characteristic["Нынешнее здоровье"] = 120
         game.Ayaks.characteristic["Максимальное здоровье"] = 120
