@@ -10,7 +10,7 @@ Tartaglia = telebot.TeleBot(TOKEN)
 @Tartaglia.message_handler(commands=['start'])
 def start(message):
     Tartaglia.send_photo(message.chat.id, "https://portalvirtualreality.ru/wp-content/uploads/2020/11/%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BB%D1%8C%D1%8F-%D1%87%D0%B0%D0%B9%D0%BB%D1%8C%D0%B4.png", caption = "Приветсвую, Вас, Анна!\nОдин Архонт попросил меня, чтобы я, в столь тёмные времена, составил Вам компанию.\nУверен, Вы наслышаны о моей великой персоне.")
-
+    game.start = 0
     markup = telebot.types.ReplyKeyboardMarkup()
     buttonA = telebot.types.KeyboardButton("Портрет")
     buttonB = telebot.types.KeyboardButton("Реплика")
@@ -456,7 +456,7 @@ def arts(message):
             game.Ayaks.rang = "Крошка Аякс"
             game.Ayaks.level["Уровень"] = 1
             game.Ayaks.level["Опыт"] = 0
-            game.Ayaks.level["Опыт дл следующего уровня"] = 10
+            game.Ayaks.level["Опыт для следующего уровня"] = 10
             game.Ayaks.level["Очки для повышения атрибутов"] = 0
             game.Ayaks.characteristic["Нынешнее здоровье"] = 120
             game.Ayaks.characteristic["Максимальное здоровье"] = 120
@@ -476,7 +476,7 @@ def arts(message):
             game.Ayaks.rang = "Крошка Аякс"
             game.Ayaks.level["Уровень"] = 1
             game.Ayaks.level["Опыт"] = 0
-            game.Ayaks.level["Опыт дл следующего уровня"] = 10
+            game.Ayaks.level["Опыт для следующего уровня"] = 10
             game.Ayaks.level["Очки для повышения атрибутов"] = 0
             game.Ayaks.characteristic["Нынешнее здоровье"] = 120
             game.Ayaks.characteristic["Максимальное здоровье"] = 120
