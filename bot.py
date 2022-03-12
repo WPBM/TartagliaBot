@@ -441,7 +441,7 @@ def arts(message):
                         Tartaglia.send_message(message.chat.id, f'\nМоракс ударил Аякса и нанёс ему критический урон! {game.Li.characteristic["Урон"]} урона.\nУ Аякса осталось {game.Ayaks.characteristic["Нынешнее здоровье"]} здоровья.')
                         сm = 0
                         game.Li.characteristic["Урон"]//=2
-                    if cm == 0:
+                    elif cm == 0:
                         Tartaglia.send_message(message.chat.id, f'\nМоракс ударил Аякса и нанёс ему {game.Li.characteristic["Урон"]} урона.\nУ Аякса осталось {game.Ayaks.characteristic["Нынешнее здоровье"]} здоровья.')
             elif e == 1:
                 Tartaglia.send_message(message.chat.id, f'\nБлагодаря ловкости, Аякс смог увернуться от удара Моракса.')
@@ -450,7 +450,7 @@ def arts(message):
         elif game.Li.characteristic["Здоровье"]<=0:
             markup = telebot.types.ReplyKeyboardMarkup()
             buttonA = telebot.types.KeyboardButton("Портрет")
-            buttonB = telebot.types.KeyboardButton("Факт")
+            buttonB = telebot.types.KeyboardButton("Реплика")
             buttonC = telebot.types.KeyboardButton("Игра")
 
             game.Ayaks.rang = "Крошка Аякс"
