@@ -471,7 +471,7 @@ def arts(message):
             Tartaglia.send_photo(message.chat.id, "https://avatars.mds.yandex.net/get-images-cbir/369811/y3dUPtGxTePKx4DCEe3uMw3449/ocr", caption = "Вы одолели Моракса!\nПоразительно, Вы смогли убить Бога! Этот момент войдёт в историю как триумф человеческой воли.\nПоздравляю! Войска Моракса потеряв лидера дезориентированы и в спешке покидают поле боя. Снежная спасена исключительно благодаря Вам, Аякс, Вы герой!",reply_markup = markup)
             game.loc1 = game.Monshtad.mobs_list[0]
             game.start = 0
-
+            game.Li.characteristic["Здоровье"]=10000
         if game.Ayaks.characteristic["Нынешнее здоровье"]<=0:
             game.Ayaks.rang = "Крошка Аякс"
             game.Ayaks.level["Уровень"] = 1
@@ -494,7 +494,7 @@ def arts(message):
             buttonB = telebot.types.KeyboardButton("В главное меню")
             markup.row(buttonA, buttonB)
             Tartaglia.send_photo(message.chat.id, "https://pbs.twimg.com/media/E3YHj7qXMAoQsEB.jpg","Моракс одолел Вас!\nНе удивительно. Человеку не по силам тягаться с Богом. И в это успешно продемонстрировали.\nАякс мертв, а вместе с ним и многовековая держава.   ", reply_markup = markup)
-            
+            game.Li.characteristic["Здоровье"]=10000
     if message.text == "Зигани":
         Tartaglia.send_photo(message.chat.id,"https://avatars.mds.yandex.net/get-images-cbir/1780006/IY3c6ek6NzikWvxKYbN5JQ7174/ocr", caption = "ХАИЛЬ ЦАРИЦА")
     
